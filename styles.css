@@ -1,0 +1,91 @@
+body {
+  font-family: "Arial";
+  background-color: #2c5f2d;
+}
+
+h1 {
+  font-family: "Arial";
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  border: 3px;
+  background-color: #97bc62ff;
+  border-style: ridge;
+  border-color: black;
+  border-radius: 7px;
+  margin: 10px;
+  padding: 2px;
+}
+
+h2 {
+  border: 3px;
+  background-color: #97bc62ff;
+  border-style: ridge;
+  border-color: black;
+  border-radius: 7px;
+  font-family: "Arial";
+  font-size: 23px;
+  padding: 2px;
+  font-weight: bold;
+  color: black;
+}
+
+header {
+  font-family: "Arial";
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  margin: 10px;
+  padding-left: 10px;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+a:visited {
+  color: #97bc62ff;
+}
+
+a:link {
+  color: #97bc62ff;
+}
+
+p {
+  font-family: "Arial";
+  font-size: 15px;
+  padding: 10px;
+  margin: 50px;
+  font-weight: bold;
+  color: black;
+}
+
+ul li {
+  font-family: "Arial";
+  font-size: 13px;
+  padding: 2px;
+  color: black;
+}
+
+nav {
+  font-family: "Arial";
+  font-weight: bold;
+  color: black;
+  width: 100vw;
+}
+
+social {
+  margin: 10px;
+  font-family: "Arial";
+  font-weight: bold;
+}
+
+picture {
+  padding-left: 130px;
+  padding-top: 100px;
+}
+
+main {
+  margin: 10px;
+  font-size: 13px;
+}
