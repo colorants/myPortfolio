@@ -9,16 +9,27 @@
 </head>
 <body>
   
-    <!--kleurtjes : Forest Green (#2C5F2D) and Moss Green (#97BC62FF)-->  
+    <!--kleurtjes : Forest Green (#2C5F2D) and Moss Green (#97BC62FF)
+    ul li {
+  font-family: "Arial";
+  font-size: 13px;
+  padding: 2px;
+  color: black;
+}-->  
 
 <br>
-<nav>
-  <a href="#Hobby">Mijn Hobby's</a>
-  - <a href="#Social">Social Media</a>
-  - <a href="#Leren">Wat wil ik leren</a>
-</nav>
+<div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#Wie ben ik">Wie ben ik</a>
+    <a href="#Hobby">Mijn Hobby's</a>
+    <a href="#Leren">Wat wil ik leren</a>
+    <div class="topnav-right">
+    <a href="#Social">Social Media</a>
+</div>
+</div>
+<div class="home" id="home"></div> 
 <br>
-<h1>Wie ben ik</h1>
+<h1 id="Wie ben ik">Wie ben ik</h1>
 <header>
   Ik ben Viggo 20 jaar oud en ik woon in Vlaardingen. Ik doe de opleiding Creative Media & Game Technologies aan de Hogeschool Rotterdam in, je raad het al, Rotterdam. Ik heb een bijbaantje bij de Praxis.
 </header>
@@ -36,13 +47,18 @@
     <li>Ontwerpen, dingen van papier of van de computer in het echt kunnen uitwerken</li>
   </ul>
 </main>
-<social>
-  <h2 id="Social">Social Media</h2>
-  <a href="https://www.instagram.com/civic_viggo/" target=_blank><strong>Instagram</strong></a>
+
+<section class="socials">
+<h2 id="Social">Social Media</h2>
+  <social>
+   
+    <a href="https://www.instagram.com/civic_viggo/" target=_blank><strong>Instagram</strong></a>
   - <a href="https://www.instagram.com/civic_viggo/" target=_blank><strong>TikTok</strong></a>
   - <a href="https://www.instagram.com/civic_viggo/" target=_blank><strong>YouTube</strong></a>
   - <a href="https://www.instagram.com/civic_viggo/" target=_blank><strong>Twitter</strong></a>
+
 </social>
+</section>
 <br>
 <br>
 <picture>
