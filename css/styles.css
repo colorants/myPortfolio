@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   background-color: black;
@@ -26,7 +27,7 @@ h2 {
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 2%;
   padding-left: 15px;
   background-color: #1f75fe;
   color: black;
@@ -34,10 +35,6 @@ h3 {
 }
 
 .logo {
-  top: 0;
-  z-index: 1;
-  left: 0;
-  position: fixed;
   margin-top: 0.5vh;
 }
 
@@ -127,6 +124,8 @@ a:link {
 
 .topnav {
   background-color: black;
+  display: flex;
+  flex-direction: column;
   color: white;
   position: fixed;
   top: 0;
@@ -138,8 +137,8 @@ a:link {
 }
 
 .topnav a {
+  background-color: black;
   font-family: "Plus Jakarta Sans", sans-serif;
-  float: right;
   padding-right: 28px;
   padding-left: 15px;
   margin-right: auto;
@@ -161,29 +160,11 @@ a:link {
 }
 
 .topnav-right {
-  float: right;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
   padding-top: 30px;
   font-family: "Plus Jakarta Sans", sans-serif;
-}
-
-.card {
-  width: 30vw;
-  margin: 0 auto;
-  border: 4px solid gold;
-  background-color: lightyellow;
-  border-radius: 30px;
-  overflow: hidden;
-  box-shadow: 7px 10px 17px rgba(0, 0, 0, 0.2);
-  flex: right;
-}
-
-.profile-picture {
-  width: 100%;
-  /*   filter: contrast(8); */
-}
-
-h3 {
-  margin-top: 0;
 }
 
 .name {
@@ -213,4 +194,12 @@ h3 {
 .contact a:hover {
   text-decoration: none;
   color: darkgrey;
+}
+
+@media (min-width: 768px) {
+  .topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between 1%;
+  }
 }
