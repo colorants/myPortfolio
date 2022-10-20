@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viggo van der Ven</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,800;1,500;1,700;1,800&display=swap" rel="stylesheet">
@@ -27,20 +29,21 @@
 <!--tekst is nog niet af-->
 <h1 id="Wie ben ik">Viggo vd Ven</h1>
   <p class="description">
-   *insert epic quote*
+    <span id="datetime"></span><script>var dt = new Date();
+      document.getElementById("datetime").innerHTML=dt.toDateString();</script> 
 </p>  
+
 <main>
   <div class="aboutme">
   <h2 id="aboutme">About me</h2>
  <p class="whiteboxtext">
-   Ik ben Viggo, 20 jaar oud. En ik woon in Vlaardingen. In mijn vrije tijd game ik of sleutel ik een beetje aan auto's of brommer ook vind ik het leuk om naar de sportschool te gaan.
-   Mijn passie ligt vanaf jongs af aan al bij computers en de omringende technologie. 
+  (W.I.P) 
    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare nisl neque, sit amet bibendum nibh ullamcorper vitae. Cras sit amet magna iaculis, sagittis risus nec, faucibus risus. Maecenas ut turpis aliquet, feugiat lacus non, sodales velit. Aliquam ultrices porta nulla, ut vulputate dolor posuere aliquam. Quisque ut libero mollis, placerat mi ut, feugiat enim. Curabitur id elementum lacus. Nam suscipit ultrices magna ac tempus. Nullam consequat consequat facilisis. Duis pellentesque, diam ac facilisis pharetra, risus mauris pulvinar mauris, non fermentum risus quam eu orci. Nullam aliquet neque nec condimentum luctus. Phasellus faucibus, justo porttitor facilisis egestas, est diam imperdiet erat, vitae ultrices mauris odio vel sem. Aliquam efficitur in nisl in maximus. Maecenas vitae felis vitae nibh gravida auctor ut ut libero. Nam at accumsan nisl.
   </p>
 </div>
 
 <div class="skills">
-  <h3 id="skills">Vaardigheden</h3>
+  <h3 id="skills">Skills</h3>
   <p class="blackboxtext">
  (W.I.P) 
  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare nisl neque, sit amet bibendum nibh ullamcorper vitae. Cras sit amet magna iaculis, sagittis risus nec, faucibus risus. Maecenas ut turpis aliquet, feugiat lacus non, sodales velit. Aliquam ultrices porta nulla, ut vulputate dolor posuere aliquam. Quisque ut libero mollis, placerat mi ut, feugiat enim. Curabitur id elementum lacus. Nam suscipit ultrices magna ac tempus. Nullam consequat consequat facilisis. Duis pellentesque, diam ac facilisis pharetra, risus mauris pulvinar mauris, non fermentum risus quam eu orci. Nullam aliquet neque nec condimentum luctus. Phasellus faucibus, justo porttitor facilisis egestas, est diam imperdiet erat, vitae ultrices mauris odio vel sem. Aliquam efficitur in nisl in maximus. Maecenas vitae felis vitae nibh gravida auctor ut ut libero. Nam at accumsan nisl.
@@ -50,8 +53,26 @@
 <div class="portfolio">
   <h2 id="portfolio">Portfolio</h2>
     <p class="whiteboxtext">
+      (W.I.P)
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare nisl neque, sit amet bibendum nibh ullamcorper vitae. Cras sit amet magna iaculis, sagittis risus nec, faucibus risus. Maecenas ut turpis aliquet, feugiat lacus non, sodales velit. Aliquam ultrices porta nulla, ut vulputate dolor posuere aliquam. Quisque ut libero mollis, placerat mi ut, feugiat enim. Curabitur id elementum lacus. Nam suscipit ultrices magna ac tempus. Nullam consequat consequat facilisis. Duis pellentesque, diam ac facilisis pharetra, risus mauris pulvinar mauris, non fermentum risus quam eu orci. Nullam aliquet neque nec condimentum luctus. Phasellus faucibus, justo porttitor facilisis egestas, est diam imperdiet erat, vitae ultrices mauris odio vel sem. Aliquam efficitur in nisl in maximus. Maecenas vitae felis vitae nibh gravida auctor ut ut libero. Nam at accumsan nisl.
       <ul class="portfolioPics">
-
+        <div class="row">
+          <div class="column">
+            <img src="images/1.png" alt="Remote" style="width:100%">
+            <p class="imageExplain">Bedmaster Remote</p>
+          </div>
+          <div class="column">
+            <img src="images/2.png" alt="Light" style="width:100%">
+            <p class="imageExplain">Light Module</p>
+          </div>
+          <div class="column">
+            <img src="images/3.png" alt="Button" style="width:100%">
+            <p class="imageExplain">Button Module</p>
+          </div>
+          <div class="column">
+            <img src="images/4.png" alt="Curtain" style="width:100%">
+            <p class="imageExplain">Curtain Module</p>
+        </div>
       </ul>
     </p>
   </div>
