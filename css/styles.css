@@ -7,181 +7,142 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   background-color: black;
   color: white;
+  scroll-behavior: inherit;
 }
 
 h1 {
-  margin-top: 33vw;
-  font-size: 8vw;
+  padding-top: 21vw;
+  font-size: 2.5rem;
   padding-left: 3%;
-  font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: bold;
 }
 
 h2 {
-  font-size: 28px;
-  padding-left: 15px;
-  font-weight: 400;
+  font-size: 1.125rem;
+  padding-left: 1vw;
+  padding-top: 0.5%;
   background-color: white;
   color: black;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h3 {
-  font-size: 2%;
-  padding-left: 15px;
+  font-size: 1.125rem;
+  padding-top: 0.5%;
+  padding-left: 1vw;
   background-color: #1f75fe;
-  color: black;
-  font-weight: 500;
-}
-
-.logo {
-  margin-top: 0.5vh;
+  color: white;
+  font-weight: 600;
 }
 
 .description {
   font-weight: bold;
-  font-size: 1.5vw;
+  font-size: 2vw;
   padding-left: 4.5%;
-  padding-bottom: 5px;
+  padding-bottom: 1%;
 }
 
-#aboutme {
-  color: black;
-  padding-left: 2.5%;
-}
-
-.aboutme {
+.whiteboxtext {
+  display: flex;
   background-color: white;
+  color: black;
   width: 100%;
-  padding: 5px;
+  font-size: 0.875rem;
+
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  padding-left: 1%;
+  padding-right: 2%;
 }
 
-#skills {
-  color: white;
-  padding-left: 2.5%;
-}
-
-.skills {
+.blackboxtext {
   background-color: #1f75fe;
+  color: white;
   width: 100%;
-  padding: 5px;
+  font-size: 0.875rem;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  padding-left: 1%;
+  padding-right: 2%;
 }
 
-#portfolio {
-  color: black;
-  padding-left: 2.5%;
+.items {
+  background-color: black;
+  color: white;
+  padding-top: 1vw;
+  padding-right: 1vw;
 }
 
-.portfolio {
-  background-color: white;
-  color: black;
-  width: 100%;
-  padding: 5px;
+.items2 {
+  background-color: black;
+  color: #1f75fe;
+  padding-top: 1vw;
+  padding-right: 1vw;
 }
 
 #socials {
-  color: black;
-  padding-left: 2.5%;
+  display: flex;
+  justify-content: center;
 }
 
 .socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: white;
-  color: black;
-  width: 100%;
-  padding: 5px;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+
+.socials a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #1f75fe;
+  text-decoration: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar a:hover {
+  color: gray;
+}
+.logo {
+  margin-right: auto;
+  max-width: 50px;
+  max-height: 50px;
+  padding: 0.3%;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0px;
 }
 
 footer {
-  margin: 3 auto;
-  display: block;
-  float: right;
-  padding: 15px;
-}
-
-header {
-  font-size: 15px;
-  font-style: 500;
-  padding-left: 10px;
-  font-weight: 500;
-}
-
-picture {
-  margin: 0 auto;
-  text-align: center;
-}
-
-a:hover {
-  color: gray;
-}
-
-a:visited {
-  color: #1f75fe;
-}
-
-a:link {
-  color: #1f75fe;
-}
-
-.topnav {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  color: white;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 10%;
-  z-index: 2;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: bold;
-}
-
-.topnav a {
-  background-color: black;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  padding-right: 28px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  color: #f2f2f2;
-  text-align: center;
-  padding-right: 28px;
   text-decoration: none;
-  font-size: 14px;
-}
-
-.topnav a:hover {
-  color: gray;
-}
-
-.topnav a.active {
-  background-color: #1f75fe;
-  color: white;
-}
-
-.topnav-right {
-  background-color: black;
   display: flex;
   flex-direction: row;
-  padding-top: 30px;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  justify-content: flex-end;
+  padding: 2%;
+  gap: 3%;
 }
 
 .name {
   font-size: 2em;
-  font-style: italic;
   text-align: center;
-  padding: 5px;
+  padding: 1%;
   margin: 0;
 }
 
-.skills {
-  padding: 10px;
-}
-
 .contact {
-  text-align: center;
-  padding: 10px;
+  padding: 1%;
   background-color: gold;
 }
 
@@ -196,10 +157,25 @@ a:link {
   color: darkgrey;
 }
 
-@media (min-width: 768px) {
-  .topnav {
-    display: flex;
+.contactForm {
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  justify-content: space-between;
+}
+
+.back-button {
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 6rem;
+  }
+  .navbar {
     flex-direction: row;
-    justify-content: space-between 1%;
   }
 }
