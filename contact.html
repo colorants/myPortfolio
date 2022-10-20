@@ -13,21 +13,72 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
-</html>
+  <body>
 
-<div class="topnav">
-  <div class="logo">
-    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="blank_">
-      <img src="images/logo.png" alt="Logo VP" width="70px" height="70px"
-    /></a>
-  </div>
+<div id="navbar">
+  <ul class="navbar">
+   <img src="images/logo.png" alt="Logo VP" class="logo"></a>
+       <li class="items2"><a href="index.html">Home</a></li>
+     </ul>
+   </div>
+ 
+ <!--tekst is nog niet af-->
+ <h1>Contact</h1>
+   <p class="description">
+    *insert epic quote*
+ </p>  
+ <main>
 
-  <div class="topnav-right">
-    <!--kan ik de anchor points verplaatsen-->
-    <a href="#socials">Social Media</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#skills">Vaardigheden</a>
-    <a href="contact.html">Contact</a>
-  </div>
+  <section>
+
+    <h2>Contact</h2>
+
+    <form action="contactForm">
+
+      <div class="contactForm">
+
+      <label for="firstName">Voornaam</label>
+
+      </div>
+
+      
+
+      <div class="contactForm">
+
+      <input type="text" id="name" name="name" placeholder="Voor uw voornaam in">
+
+      <label for="dateOfBirth">Geboortedatum</label>
+
+      <input type="date" id="dateOfBirth" name="dateOfBirth" placeholder="Voer uw geboortedatum in">
+
+      </div>
+
+
+
+      <div class="contactForm">
+
+      <label for="Email">Email</label>
+
+      <input type="email" id="Email" name="Emaik=l" placeholder="Voer uw email in">
+
 </div>
+
+<div class="contactForm"><label for="contactType">Reden van contact</label>
+<select type="contactType" id="contactType" name="contactType" placeholder="">
+<option value="question">Ik heb een vraag</option>
+<option value="">Ik heb een vraag</option>
+<option value="">Ik heb een vraag</option>
+<option value="">Ik heb een vraag</option>
+</select>
+</div>
+<form class="back-button">
+  <input type="button" value="Terug naar Home" onclick="history.back()">
+ </form>
+</form>
+</section>
+</main>
+
+
+      
+</body>
+</html>
