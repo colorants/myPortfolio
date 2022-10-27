@@ -50,26 +50,23 @@ h3 {
 }
 
 .whiteboxtext {
-  display: flex;
   background-color: white;
   color: black;
-  width: 100%;
+  width: 99%;
   font-size: 0.875rem;
   padding-top: 1.5%;
   padding-bottom: 1.5%;
   padding-left: 1%;
-  padding-right: 2%;
 }
 
 .blackboxtext {
   background-color: #1f75fe;
   color: white;
-  width: 100%;
+  width: 99%;
   font-size: 0.875rem;
   padding-top: 1.5%;
   padding-bottom: 1.5%;
   padding-left: 1%;
-  padding-right: 2%;
 }
 
 .items {
@@ -92,16 +89,23 @@ h3 {
 }
 
 .socials {
-  flex-direction: column;
   background-color: white;
   padding-top: 0.5%;
   padding-bottom: 0.5%;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.socials a {
-  display: flex;
-  flex-direction: row;
+.socialbar a {
   color: #1f75fe;
+  text-decoration: none;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  padding-left: 1%;
+}
+
+.socialbar a:visited {
+  color: #0f6afd;
   text-decoration: none;
 }
 
@@ -112,6 +116,16 @@ footer {
   justify-content: flex-end;
   padding: 2%;
   gap: 3%;
+}
+
+footer a {
+  text-decoration: none;
+  color: #0f6afd;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .name {
@@ -174,4 +188,21 @@ footer {
   padding: 0.3%;
   visibility: visible;
   opacity: 0.7;
+}
+
+progress {
+  border: none;
+  width: 40vw;
+  height: 1rem;
+}
+
+progress::-webkit-progress-value {
+  background: black;
+  border-radius: 2px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25) inset;
 }
