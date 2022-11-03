@@ -47,7 +47,7 @@
 
       <div class="contactForm">
 
-      <input type="text" id="name" name="name" placeholder="Voor uw voornaam in">
+      <input type="text" id="name" name="name" placeholder="Voor uw voornaam in" required>
 
       <label for="dateOfBirth">Geboortedatum</label>
 
@@ -61,26 +61,34 @@
 
       <label for="Email">Email</label>
 
-      <input type="email" id="Email" name="Emaik=l" placeholder="Voer uw email in">
+      <input type="email" id="Email" name="email=l" placeholder="Voer uw email in" required>
+
+      
 
 </div>
 
 <div class="contactForm"><label for="contactType">Reden van contact</label>
-<select type="contactType" id="contactType" name="contactType" placeholder="">
+<select type="contactType" id="contactType" name="contactType"  required>
 <option value="question">Ik heb een vraag</option>
 <option value="complaint">Ik heb een klacht</option>
-<option value="">Ik heb een vraag</option>
 <option value="overig">Overig (Vul hieronder in)</option>
 </select>
-<input type="text"> 
+
+<div id="text">
+<input type="text" > 
 </div>
-<div id="backbutton">
-<form class="back-button">
-  <input type="button" value="Terug naar Home" onclick="history.back()">
- </form>
+
 </div>
-</form>
-</section>
+<div id="submitbutton">
+<input type="submit" value="Versturen" >
+</div>
+  <div id="backbutton">
+    <form class="back-button">
+     <input type="button" value="Terug naar Home" onclick="history.back()">
+      </form>
+    </div>
+    </form>
+  </section>
 </main>
 
 

@@ -19,15 +19,15 @@ body {
 
 h1 {
   padding-top: 21vw;
-  font-size: 6rem;
+  font-size: 6.5rem;
   padding-left: 3%;
   font-weight: bold;
 }
 
 h2 {
   font-size: 1.125rem;
-  padding-left: 1vw;
   padding-top: 0.5%;
+  padding-left: 1vw;
   background-color: white;
   color: black;
   font-weight: 600;
@@ -44,7 +44,7 @@ h3 {
 
 .description {
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 1.5rem;
   padding-left: 4.5%;
   padding-bottom: 1%;
 }
@@ -96,6 +96,14 @@ h3 {
   text-align: center;
 }
 
+.socialbar a :hover {
+  color: grey;
+  opacity: 0.9;
+  transition: 0.4s;
+  border-color: black;
+  text-decoration: underline;
+}
+
 .socialbar a {
   color: #1f75fe;
   text-decoration: none;
@@ -116,6 +124,7 @@ footer {
   justify-content: flex-end;
   padding: 2%;
   gap: 3%;
+  font-size: 0.75rem;
 }
 
 footer a {
@@ -125,7 +134,8 @@ footer a {
 
 footer a:hover {
   color: white;
-  text-decoration: none;
+  opacity: 0.9;
+  transition: 0.4s;
 }
 
 .name {
@@ -135,23 +145,19 @@ footer a:hover {
   margin: 0;
 }
 
-.navbar {
-  display: flex;
-  flex-direction: row;
-}
+
 
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 1.125rem;
+    font-size: 5rem;
   }
-  .navbar {
-    flex-direction: row;
+  #navbar {
+    flex-direction: column;
   }
 }
 
 .row {
   display: flex;
-  overflow: hidden;
   background-color: white;
 }
 
@@ -159,11 +165,13 @@ footer a:hover {
   position: relative;
   flex: 33%;
   object-fit: scale-down;
+  border-color: green;
+  border-radius: 4px;
 }
 
 .column:hover {
-  transform: scale(0.9);
-  border-radius: 5%;
+  transform: scale(0.98);
+  border-radius: 7%;
 }
 
 .imageExplain {
@@ -175,19 +183,22 @@ footer a:hover {
   color: white;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: visibility 0s, opacity 0.3s linear;
+  transition-delay: 1s;
   transition: visibility 0s, opacity 0.3s linear;
   border-radius: 4px;
 }
 
 .column:hover {
   cursor: pointer;
+  opacity: 0.8;
+  transition: 0.6s;
 }
 
 .column:hover .imageExplain {
   padding: 0.3%;
   visibility: visible;
   opacity: 0.7;
+  transition: ease-in-out;
 }
 
 progress {
@@ -206,3 +217,4 @@ progress[value]::-webkit-progress-bar {
   border-radius: 2px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25) inset;
 }
+

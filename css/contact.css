@@ -20,6 +20,7 @@
   flex-direction: column;
   width: 20%;
   justify-content: space-between;
+ 
 }
 
 .back-button {
@@ -35,6 +36,39 @@
   margin-bottom: 3vh;
 }
 
+
+#submitbutton {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1vh;
+}
+
+#submitbutton:hover{
+cursor:pointer;
+}
+
+input:invalid {
+  
+  color:red;
+  font-size: 1.05;
+
+}
+
+input:valid {
+  background: white;
+
+}
+
 h2 {
   padding: 0.5%;
+}
+
+@media screen and (max-width: 768px) {
+  .contactForm {
+    font-size: 1.125rem;
+  }
+  .contactForm {
+    width: 40%;
+  }
+
 }
