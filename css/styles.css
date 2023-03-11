@@ -218,12 +218,16 @@ progress[value]::-webkit-progress-bar {
 
 #slider {
   margin: 0 auto;
-  width: 800px;
+  padding-left: 25vw;
+  padding-right: 25vw;
+  padding-top: 2vh;
+  background-color: #1f75fe;
+  width: 50vw;
   max-width: 100%;
-  text-align: center;
 }
 #slider input[type="radio"] {
   display: none;
+  margin-bottom: 1vw;
 }
 #slider label {
   cursor: pointer;
@@ -347,4 +351,8 @@ progress[value]::-webkit-progress-bar {
     max-width: calc(100% - 140px);
     margin: 0 auto;
   }
+}
+
+#backgroundmaker {
+  background-color: #007ea7;
 }
