@@ -319,7 +319,7 @@ progress[value]::-webkit-progress-bar {
   display: block;
 }
 #bullets {
-  margin: 150px 0 0;
+  margin: 15vh 0 0;
   text-align: center;
 }
 #bullets label {
@@ -355,4 +355,10 @@ progress[value]::-webkit-progress-bar {
 
 #backgroundmaker {
   background-color: #007ea7;
+}
+
+#pic9 {
+  margin-left: 25%;
+  margin-top: 2%;
+  border-radius: 5px;
 }
