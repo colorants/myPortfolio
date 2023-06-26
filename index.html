@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viggo van der Ven</title>
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/contact.css">
@@ -16,8 +17,6 @@
 </head>
 <body>
   
-    <!--dont'touch ^-->
-    <!--start of site-->
 
     <nav>
   <div id="navbar">
@@ -34,7 +33,6 @@
   </div>
 </nav>
 
-<!--tekst is nog niet af-->
 <h1 id="Wie ben ik">Viggo vd Ven</h1>
   <p class="description">
     <span id="datetime"></span>
@@ -52,7 +50,7 @@
 </div>
 </header>
 
-<div class="skills">
+<div class="skills is-center">
   <h3 id="skills">Skills</h3>
   <section>
   <p class="blackboxtext">
@@ -70,7 +68,11 @@
     <br>
     <label for="skill1">JS</label>
     <br>
-    <progress id="skill1" value="35" max="100"> 35 </progress>
+    <progress id="skill1" value="55" max="100"> 35 </progress>
+    <br>
+    <label for="skill1">PHP</label>
+    <br>
+    <progress id="skill1" value="30" max="100"> 30 </progress>
     <br>
     <label for="skill1">Lasercutting</label>
     <br>
@@ -79,6 +81,7 @@
     <label for="skill1">3D-Printing</label>
     <br>
     <progress id="skill1" value="30" max="100"> 30 </progress>
+    
  
 
   </p>
@@ -88,7 +91,7 @@
 <div class="portfolio">
   <h2 id="portfolio">Portfolio</h2>
     <p class="whiteboxtext">
-  De eerste opdracht bij CMGT was : bouw een robot die iemands leven verbeterd. Ik had zelf een rijdende zeilboot gemaakt, voor mijn teamgenoot. Deze was niet al te best. De vervolgopdracht hiervan was : maak met een groep een robot die iemand hun leven verbeterd.
+  De eerste opdracht bij CMGT was : bouw een robot die iemands leven opfleurt. Ik had zelf een rijdende zeilboot gemaakt, voor mijn teamgenoot. Deze was niet al te best. De vervolgopdracht hiervan was : maak met een groep een robot die iemand hun leven verbeterd.
   Toen kwamen wij uit op de Bedmaster, een afstandbediening met bijbehorende modules waarmee je apparaten of andere dingen in je slaapkamer kan bedienen op afstand.
     
       <ul class="portfolioPics">
@@ -113,61 +116,76 @@
       </ul>
     </p>
 
+  </div>
     <p class="blackboxtext">
     Onze tweede opdracht was het opzetten van een reserveringsysteem voor een opdrachtgever en gebruik maken van Php.
-    Hier heb ik geleerd hoe ik een database opzet en vanuit een website informatie naar die database kan brengen en ophalen.
-        <div id="slider">
-          <input type="radio" name="slider" id="slide1" checked>
-          <input type="radio" name="slider" id="slide2">
-          <input type="radio" name="slider" id="slide3">
-          <input type="radio" name="slider" id="slide4">
-          <div id="slides">
-             <div id="overflow">
-                <div class="inner">
-                   <div class="slide slide_1">
-                      <div class="slide-content">
-                        <img src="images/5.png" alt="Home pagina" style="width:100%">
-                      </div>
-                   </div>
-                   <div class="slide slide_2">
-                      <div class="slide-content">
-                        <img src="images/6.png" alt="Afspraak pagina" style="width:100%">
-                      </div>
-                   </div>
-                   <div class="slide slide_3">
-                      <div class="slide-content">
-                        <img src="images/7.png" alt="Informatie pagina" style="width:100%">
-                      </div>
-                   </div>
-                   <div class="slide slide_4">
-                      <div class="slide-content">
-                        <img src="images/8.png" alt="Dashboard" style="width:100%">
-                      </div>
-                   </div>
-                </div>
-             </div>
+    Hier heb ik geleerd hoe ik een database opzet en vanuit een website informatie naar die database kan brengen en ophalen. 
+    Zo maakte ik deze opdracht voor een haarsalon.
+    <a href="https://colorants.github.io/Lias_hairsalon/">Link naar de website op github pages</a>
+    <ul class="portfolioPics">
+      <div class="row">
+        <div class="column">
+          <img src="images/5.png" alt="Hoofdpagina" style="width:100%">
+          <p class="imageExplain"> Hoofdpagina</p>
+        </div>
+        <div class="column">
+          <img src="images/6.png" alt="Reserveringspagina" style="width:100%">
+          <p class="imageExplain">Reserveringspagina</p>
+        </div>
+        <div class="column">
+          <img src="images/7.png" alt="Mogelijkhedenpagina " style="width:100%">
+          <p class="imageExplain">In-game met torens</p>
+        </div>
+        <div class="column">
+          <img src="images/8.png" alt="Agenda (wijzigen of aanpassen)" style="width:100%">
+          <p class="imageExplain">(wijzigen of aanpassen) </p>
           </div>
-          <div id="controls">
-             <label for="slide1"></label>
-             <label for="slide2"></label>
-             <label for="slide3"></label>
-             <label for="slide4"></label>
-          </div>
-          <div id="bullets">
-             <label for="slide1"></label>
-             <label for="slide2"></label>
-             <label for="slide3"></label>
-             <label for="slide4"></label>
-          </div>
-       </div>
-        </p>
-  </div>
+      </div>
+    </ul>
 
   <p class="whiteboxtext"> 
   De derde opdracht bestaat uit het maken van een website waarvan een teamgenoot elke één pagina heeft. Het onderwerp van deze site gaat over accesibility.<br>
-  Onze groep had de doelgroep : Slechtziende - Winkelen. Zo maken wij een website met informatie voor degene die met slechtziende te maken hebben / gaan hebben.
-  <img src="images/9.png"  alt="Home pagina" style="width:50%" id="pic9">
+  Onze groep had de doelgroep : Slechtziende die gingen winkelen. Zo maken wij een website met informatie voor degene die met slechtziende te maken hebben / gaan hebben.
+  <a href="https://colorants.github.io/CLE3-Accessibility/">Link naar de website op github pages</a>
+  <ul class="portfolioPics">
+    <div class="row">
+      <div class="column">
+        <img src="images/9.png" alt="Hoofdpagina" style="width:100%">
+        <p class="imageExplain"> Hoofdpagina</p>
+      </div>
+    </div>
+  </ul>
+  
   </p>
+
+  <p class="blackboxtext">
+    De vierd opdracht was het ontwikkelen van een game in ongeveer 1,5 week tijd, met de excalibur framework. Wij als groep hadden de game Parkplaag gemaakt. <br>
+    Een spel waar je doormiddel van bekende Rotterdams, het park (Park 1943), beschermd tegen ongedierte.
+    <a href="https://colorants.github.io/CLE3-Accessibility/">Link naar de (speelbare) game op github pages</a>
+      
+        <ul class="portfolioPics">
+          <div class="row">
+            <div class="column">
+              <img src="images/13.png" alt="startmenu" style="width:100%">
+              <p class="imageExplain">Game Hoofdmenu</p>
+            </div>
+            <div class="column">
+              <img src="images/12.png" alt="in-game" style="width:100%">
+              <p class="imageExplain">In-game</p>
+            </div>
+            <br>
+            <br>
+            <div class="column">
+              <img src="images/10.png" alt="in-game met torens " style="width:100%">
+              <p class="imageExplain">In-game met torens</p>
+            </div>
+            <div class="column">
+              <img src="images/11.png" alt="pauze menu" style="width:100%">
+              <p class="imageExplain">Pauze menu</p>
+              </div>
+          </div>
+        </ul>
+      </p>
 </main>
 
 
